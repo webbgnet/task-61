@@ -91,15 +91,14 @@
     </div>
 
     
-
 <script>
-let nodeList = document.querySelectorAll('.hot');
-for (let i = 0; i < nodeList.length; i++) {
-  nodeList[i].textContent += "🔥";
-}
 
-console.log(nodeList);
-    </script>
+let nodeList = document.querySelectorAll('.hot');
+nodeList.forEach(book => {
+    book.innerHTML += '🔥'
+})
+
+</script>
 
   </body>
 </html>

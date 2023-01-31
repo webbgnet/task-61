@@ -51,7 +51,7 @@
               </div>
               <div class="media-content">
                 <p class="title is-4">iO Series 8</p>
-                <p class="subtitle is-6 price">$1,00</p>
+                <p class="subtitle is-6 price hot">$1,00</p>
               </div>
             </div>
 
@@ -93,9 +93,21 @@
     
 
 <script>
-var theDiv = document.querySelector(".hot");
+/*var theDiv = document.querySelector(".hot");
 theDiv.innerHTML += '🔥'; 
 console.log(theDiv);
+
+*/
+let nodeList = document.querySelectorAll(".hot");
+for (let i = 0; i < nodeList.length; i++) {
+  nodeList[i].innerHTML += "🔥";
+}
+
+/*
+let headerTitle = container.querySelectorAll('.title');
+headerTitle.innerHTML = 'Hello';
+console.log(headerTitle);
+*/
 </script>
 
   </body>

@@ -93,10 +93,11 @@
     
 <script>
 
-let nodeList = document.querySelectorAll('.hot');
-nodeList.forEach(book => {
-    book.innerHTML += '🔥'
+Array.from(document.querySelectorAll('.hot'))
+.forEach(hot => {
+  hot.innerHTML += '🔥';
 })
+
 
 </script>
 
